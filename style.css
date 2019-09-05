@@ -77,6 +77,11 @@
     .col-s-12 {
       width: 100%;
     }
+
+    .logoid {
+      width: 25%;
+      max-height: 150px;
+    }
   }
   
   
@@ -91,7 +96,7 @@
     .col-2 {
       width: 16.66%;
     }
-  
+
     .col-3 {
       width: 25%;
     }
@@ -131,6 +136,7 @@
     .col-12 {
       width: 100%;
     }
+
   }
   
   [class*="col-"] {
@@ -174,6 +180,7 @@
       background-color: lightblue;
     }
   }
+
 
   nav ul {
     list-style-type: none;
