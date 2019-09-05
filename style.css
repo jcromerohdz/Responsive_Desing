@@ -15,6 +15,12 @@
     width: 25%;
     float: left;
   }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
   
   /* For mobile phones: */
   [class*="col-"] {
