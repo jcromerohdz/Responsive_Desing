@@ -168,3 +168,25 @@
       background-color: lightblue;
     }
   }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  nav ul li {
+    float: left;
+	  flex-direction: row;
+	  flex-wrap:  nowrap;
+	  list-style: none;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    text-align: center;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 48px;
+    color: #aaa;
+  }
