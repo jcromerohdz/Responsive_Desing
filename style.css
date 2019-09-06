@@ -21,12 +21,17 @@
     clear: both;
     display: table;
 }
+
+  .searchid {
+    margin-left: 50px;
+}
+
   
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
   }
-  
+
   @media only screen and (min-width: 600px) {
   
     /* For tablets: */
@@ -79,13 +84,17 @@
     }
 
     .logoid {
-      width: 25%;
-      max-height: 150px;
+      width: 100%;
+      max-width: 110px;
+      max-height: 70px;
     }
+
+    #searchid {
+      margin-left: 0px;
+    }
+
   }
   
-  
-
   @media only screen and (max-width: 768px) {
   
     /* For desktop: */
@@ -181,7 +190,6 @@
     }
   }
 
-
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -203,3 +211,6 @@
     line-height: 48px;
     color: #aaa;
   }
+
+
+
