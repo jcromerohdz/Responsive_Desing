@@ -11,27 +11,69 @@
 <body>
     <header>
         <div class="row">
-        <div class="col-s-2">
-            <img src="./img/TNWicon_logo.jpg" class="logoid"   alt="">
-        </div>
-        <div class="col-s-10 col-">
-            <nav>
+
+            <nav class="topnav" id="myTopnav">
+                <div class="nav_logo">
+                    <a  id="logo" href=""><img alt="The Next Web"
+                            src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"></a>
+                </div>
                 <ul>
-                    <li><a>LASTEST</a></li>
-                    <li><a>HARD FORK</a></li>
-                    <li><a>PLUGGED</a></li>
-                    <li><a>FUNDAMENTALS</a></li>
-                    <li><a>WORK 2030</a></li>
-                    <li id="searchid"><a><i class="fa fa-search"></i></a><li>
+                    <a href="#">LASTEST</a>
+                    <a href="#">HARD FORK</a>
+                    <a href="#">PLUGGED</a>
+                    <a href="#">FUNDAMENTALS</a>
+                    <a href="#">WORK 2030</a>
+                    
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <a><i class="fa fa-search active"></i></a>
                 </ul>
-                
+
             </nav>
         </div>
-    </div>
-
     </header>
+
     <main>
-        <div>
+        <div class="row">
+            <div class="container">
+                <div class="img-container-1">
+                    <p>
+                    <h5>Podium</h5>
+                    <h1>I failed supporting female co-funder - here's how I try to do better</h1>
+                    <ul>
+                        <li>by Christoph Bornshein</li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16"
+                                viewbox="0 0 192 192" style=" fill: #000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal;">
+                                    <path d="M0,192v-192h192v192z" fill="none"></path>
+                                    <g fill="#ffffff">
+                                        <path
+                                            d="M96,16c-44.08802,0 -80,35.91198 -80,80c0,44.08802 35.91198,80 80,80c44.08802,0 80,-35.91198 80,-80c0,-44.08802 -35.91198,-80 -80,-80zM96,32c35.44098,0 64,28.55902 64,64c0,35.44098 -28.55902,64 -64,64c-35.44098,0 -64,-28.55902 -64,-64c0,-35.44098 28.55902,-64 64,-64zM88,48v51.3125l34.34375,34.34375l11.3125,-11.3125l-29.65625,-29.65625v-44.6875z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            " 18 hours ago"
+                        </li>
+                    </ul>
+                </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="img-container-2">
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="img-container-3">
+
+                </div>
+            </div>
             <div >
                 <div class="col-s-8 col-">
                     text
@@ -150,4 +192,15 @@
 
     
 </body>
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    }
+</script>
 </html>
