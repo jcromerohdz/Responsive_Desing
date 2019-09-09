@@ -166,6 +166,54 @@ html {
   display: inline-block;
 }
 
+.section-3-title {
+  color: orangered;
+}
+
+.section-3-title h1 {
+  position: relative;
+  font-size: 22px;
+}
+
+.section-3-nav a {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  color: orangered;
+}
+
+#section-3-ul {
+  position: absolute;
+  padding: 0;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: #c09;
+  width: 100%;
+  position: relative;
+}
+
+.box-title {
+  display: flex;
+  height: 30px;
+  background-color: orangered;
+}
+
+.box-price {
+  display: flex;
+  height: 30px;
+  background-color: linen;
+}
+
+.box-picture {
+  width: 50px;
+  height: 50px;
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:last-child) {
