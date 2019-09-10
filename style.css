@@ -190,6 +190,7 @@ html {
 .box {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
   background-color: #c09;
@@ -198,20 +199,56 @@ html {
 }
 
 .box-title {
-  display: flex;
-  height: 30px;
+  height: 50px;
   background-color: orangered;
 }
 
+.box-title h5 {
+  color: white;
+  padding-left: 100px;
+}
+
 .box-price {
-  display: flex;
-  height: 30px;
+  height: 70px;
   background-color: linen;
 }
 
+.box-price h5 {
+  padding-left: 100px;
+}
+
 .box-picture {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  z-index: 1;
+}
+
+.box-picture img {
+  width: 80px;
+  height: 80px;
+}
+
+.box-content {
+  background: snow;
+  height: 200px;
+}
+
+.box-content img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.box-content span {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.box-content hr {
+  border-top: 0.5px solid orangered;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
