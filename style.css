@@ -369,14 +369,6 @@ html {
   background-size: cover;
 }
 
-
-
-
-.topic-image:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 .topic-image > * {
   margin: 2px 10px;;
 }
