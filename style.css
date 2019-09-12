@@ -605,4 +605,18 @@ footer {
     height: 250px;
   }
 
+  .row-section-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: flex-end;
+  }
+
+  .row-section-3 .box {
+    flex: 1 0 21%;
+    margin: 5px;
+  }
 }
