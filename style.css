@@ -477,7 +477,7 @@ html {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .topnav a:not(:last-child) {
     display: none;
   }
@@ -544,10 +544,20 @@ footer {
   background-color: rgb(14, 14, 14);
 }
 
+.row-section-4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column-section-4 {
+  flex-basis: 100%;
+}
+
 /* Media queries */
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {
     position: relative;
   }
@@ -565,7 +575,7 @@ footer {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   /* body {
     display: none;
   } */
@@ -590,7 +600,7 @@ footer {
   .row-section-2 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     flex-flow: row wrap;
@@ -598,16 +608,17 @@ footer {
     margin: 0 auto;
   }
 
-  .row-section-2 .section-2-wrapper {
-    flex: 1 0 21%;
-    margin: 5px;
-    /* width: 300px;
-    height: 380px; */
+  .section-2-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 0 0 21%;
   }
 
   .content-picture img {
     width: 22em;
-    height: 250px;
+    height: 200px;
   }
 
   .row-section-3 {
@@ -625,19 +636,23 @@ footer {
     margin: 5px;
   }
 
-  .row-section-4 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    align-content: flex-start;
+  .column-section-4 {
+    flex: 1;
   }
 
-  .row-section-4 section {
-    flex: 1 0 31%;
-    margin: 5px;
-    width: 350px;
+  ._25 {
+    flex: 2.5;
+  }
+
+  ._33 {
+    flex: 3.3;
+  }
+
+  ._55 {
+    flex: 5.5;
+  }
+
+  ._20 {
+    flex: 2;
   }
 }
