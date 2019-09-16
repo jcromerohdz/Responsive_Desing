@@ -630,7 +630,6 @@ footer {
     flex-wrap: wrap;
     flex-flow: row wrap;
     align-content: flex-end;
-    margin: 0 auto;
   }
 
   .row-section-2 .section-2-wrapper {
@@ -639,12 +638,25 @@ footer {
     margin: 5px;
   }
 
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .items .item {
+    flex: 1 0 25%;
+    box-sizing: border-box;
+    background: #e0ddd5;
+    color: #171e42;
+    padding: 10px;
+  }
+
   .content {
     width: 20em;
   }
 
   .content-picture img {
-    width: 20em;
+    width: 100%;
     height: 200px;
   }
 
