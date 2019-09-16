@@ -8,6 +8,7 @@ html {
 
 .nav_logo {
   display: block;
+  padding-left: 8px;
 }
 
 .nav_logo #logo {
@@ -476,6 +477,20 @@ html {
   background-repeat: no-repeat;
 }
 
+.LASTEST-DEALS {
+  display: block;
+  flex: 0 1 25%;
+  padding: 0 10px;
+  margin-bottom: 5px;
+}
+
+.LASTEST-DEALS h1 {
+  font-size: 32px;
+  padding-left: 26px;
+  font-family: "Lucida Sans", sans-serif;
+  color: orangered;
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
   .topnav a:not(:last-child) {
@@ -614,6 +629,7 @@ footer {
     flex-direction: column;
     flex-basis: 100%;
     flex: 0 0 21%;
+    padding-right: 60px;
   }
 
   .content-picture img {
