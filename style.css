@@ -591,6 +591,13 @@ footer {
 /* Media queries */
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
+  .item {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 3px;
+  }
+}
 
 @media screen and (max-width: 800px) {
   .topnav a:not(:last-child) {
@@ -611,12 +618,6 @@ footer {
     float: right;
     display: block;
     color: orangered;
-  }
-
-  .item {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-gap: 3px;
   }
 }
 
