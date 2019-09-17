@@ -20,7 +20,6 @@ html {
 .nav_logo #logo {
   position: relative;
   z-index: 2;
-  background-color: #f42;
   background: linear-gradient(to bottom right, #c09, #f42 85%);
   display: block;
   height: 55px;
@@ -162,7 +161,6 @@ html {
 }
 
 .content-picture {
-  display: flex;
   flex-direction: column;
   flex-basis: 20%;
   flex: 0.4;
@@ -174,7 +172,6 @@ html {
 }
 
 .content {
-  display: flex;
   flex-direction: column;
   flex-basis: 80%;
   flex: 2;
@@ -402,7 +399,7 @@ html {
 }
 
 .topic-image > * {
-  margin: 2px 10px;;
+  margin: 2px 10px;
 }
 
 .topic-image small {
@@ -695,7 +692,6 @@ footer {
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-flow: row wrap;
     align-content: flex-end;
   }
 
@@ -737,7 +733,6 @@ footer {
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-flow: row wrap;
     align-content: flex-end;
   }
 
