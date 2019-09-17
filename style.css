@@ -116,6 +116,10 @@ html {
   display: inline-block;
 }
 
+#p-content-1 {
+  padding-top: 150px;
+}
+
 .img-container-2 {
   background-image: url('img/2.png');
   background-color: #000;
@@ -206,7 +210,12 @@ html {
 
 #section-3-ul {
   position: absolute;
-  padding: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#section-3-ul li {
+  display: inline-block;
 }
 
 .box {
@@ -507,10 +516,20 @@ html {
   color: orangered;
 }
 
+.section-3-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 3px;
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .topnav a:not(:last-child) {
     display: none;
+  }
+
+  #p-content-1 {
+    padding-top: 20px;
   }
 
   .section-3-grid {
@@ -527,7 +546,7 @@ html {
 
   .item {
     display: grid;
-    grid-template-columns: 12% 88%;
+    grid-template-columns: 20% 80%;
     grid-gap: 3px;
   }
 }
