@@ -528,6 +528,14 @@ html {
     display: none;
   }
 
+  .p-small-content {
+    padding-bottom: 15px;
+  }
+
+  .p-small-content h1 {
+    font-size: 14px;
+  }
+
   #p-content-1 {
     padding-top: 20px;
   }
@@ -617,7 +625,20 @@ footer {
 }
 
 /* Media queries */
+@media screen and (max-width: 400px) {
+  .p-small-content {
+    padding-bottom: 26px;
+  }
 
+  .p-small-content h1 {
+    font-size: 14px;
+  }
+
+  #p-content-1 {
+    padding-top: 130px;
+  }
+
+}
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 768px) {
   .topnav.responsive {
@@ -641,6 +662,18 @@ footer {
   /* Header */
   .row {
     display: flex;
+  }
+
+  .p-small-content {
+    padding-bottom: 15px;
+  }
+
+  .p-small-content h1 {
+    font-size: 14px;
+  }
+
+  #p-content-1 {
+    padding-top: 130px;
   }
 
   .container-1-column {
