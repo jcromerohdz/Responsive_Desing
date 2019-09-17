@@ -6,6 +6,12 @@ html {
   font-family: "Lucida Sans", sans-serif;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 .nav_logo {
   display: block;
   padding-left: 8px;
@@ -136,96 +142,6 @@ html {
   right: 4px;
   opacity: 1;
   z-index: 4;
-}
-
-.latest-news {
-  height: 550px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.article {
-  flex: 0 1 25%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.article h4 {
-  font-size: 15px;
-  padding: 8px 0;
-  margin: 0;
-}
-
-.article h4:hover {
-  cursor: pointer;
-  color: rgb(255, 67, 34);
-}
-
-.article small {
-  font-size: 12px;
-  color: gray;
-}
-
-.article small:hover {
-  cursor: pointer;
-  color: black;
-}
-
-.art-img {
-  height: 60%;
-}
-
-.art-img:hover {
-  cursor: pointer;
-}
-
-.art-img1 {
-  background-image: url(./img/1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.art-img2 {
-  background-image: url(./img/topicimage2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.art-img3 {
-  background-image: url(./img/topicimage3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.art-img4 {
-  background-image: url(./img/topicimage4.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.art-img5 {
-  background-image: url(./img/topicimage5.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.art-img6 {
-  background-image: url(./img/topicimage6.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.art-img7 {
-  background-image: url(./img/topicimage7.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.art-img8 {
-  background-image: url(./img/topicimage8.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .section-2 {
@@ -592,9 +508,15 @@ html {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .topnav a:not(:last-child) {
     display: none;
+  }
+
+  .section-3-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 3px;
   }
 
   .topnav a.icon {
@@ -603,34 +525,10 @@ html {
     color: orangered;
   }
 
-<<<<<<< HEAD
-  .latest-news {
-    height: 650px;
-  }
-
-  .article {
-    flex: 0 1 33.33%;
-  }
-
-  .art-img {
-    height: 65%;
-  }
-
-  .article h4 {
-    font-size: 13px;
-    padding-bottom: 0;
-    margin: 0;
-    line-height: 19px;
-  }
-
-  .article small {
-    font-size: 10px;
-=======
   .item {
     display: grid;
     grid-template-columns: 12% 88%;
     grid-gap: 3px;
->>>>>>> 865b2803856451b16d80b47bd3a1178ce139ec5e
   }
 }
 
@@ -702,7 +600,7 @@ footer {
 /* Media queries */
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media only  screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {
     position: relative;
   }
@@ -718,50 +616,6 @@ footer {
     display: block;
     text-align: left;
   }
-
-  .article {
-    flex: 0 1 33.33%;
-  }
-
-  .art-img {
-    height: 65%;
-  }
-
-  .article h4 {
-    font-size: 13px;
-    padding-bottom: 0;
-    margin: 0;
-    line-height: 19px;
-  }
-
-  .article small {
-    font-size: 10px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-    .latest-news {
-      height: 650px;
-    }
-
-    .article {
-      flex: 0 1 33.33%;
-    }
-
-    .art-img {
-      height: 65%;
-    }
-  
-    .article h4 {
-      font-size: 13px;
-      padding-bottom: 0;
-      margin: 0;
-      line-height: 19px;
-    }
-    
-    .article small {
-      font-size: 10px;
-    }
 }
 
 @media (min-width: 800px) {
@@ -842,33 +696,4 @@ footer {
   .column-section-4 {
     flex: 1;
   }
-<<<<<<< HEAD
-
-  ._25 {
-    flex: 2.5;
-  }
-
-  ._33 {
-    flex: 3.3;
-  }
-
-  ._55 {
-    flex: 5.5;
-  }
-
-  ._20 {
-    flex: 2;
-  }
-
-  @media only screen and (max-width: 1000px) {
-    .latest-news {
-      height: 650px;
-    }
-    
-    .article {
-      flex: 0 1 33.33%;
-    }
-}
-=======
->>>>>>> 865b2803856451b16d80b47bd3a1178ce139ec5e
 }

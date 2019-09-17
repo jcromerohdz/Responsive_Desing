@@ -1,4 +1,0 @@
-display: block;
-  flex: 0 1 25%;
-  padding: 0 10px;
-  margin-bottom: 5px;
