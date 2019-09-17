@@ -163,7 +163,6 @@ html {
 .content-picture {
   flex-direction: column;
   flex-basis: 20%;
-  flex: 0.4;
 }
 
 .content-picture img {
@@ -174,7 +173,6 @@ html {
 .content {
   flex-direction: column;
   flex-basis: 80%;
-  flex: 2;
   text-align: left;
 }
 
