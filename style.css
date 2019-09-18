@@ -586,15 +586,8 @@ footer {
 /* Media queries */
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 768px) {
-  .item {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-gap: 3px;
-  }
-}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .topnav a:not(:last-child) {
     display: none;
   }
@@ -616,40 +609,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .p-small-content {
-    padding-bottom: 26px;
-  }
-
-  .p-small-content h1 {
-    font-size: 14px;
-  }
-
-  #p-content-1 {
-    padding-top: 0;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 768px) {
-  .topnav.responsive {
-    position: relative;
-  }
-
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-@media (min-width: 768px) {
+/* Larger screens */
+@media screen and (min-width: 1024px) {
   /* Header */
   .row {
     display: flex;
@@ -741,5 +702,152 @@ footer {
 
   .column-section-4 {
     flex: 1;
+  }
+
+  .row-section-4 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+
+/* Medium screens */
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 1024px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .row {
+    display: flex;
+    position: relative;
+  }
+
+  .p-small-content {
+    padding-bottom: 13px;
+  }
+
+  #h1-small-title-1 {
+    font-size: 14px;
+  }
+
+  #h1-small-title-2 {
+    font-size: 14px;
+  }
+
+  .container-1-column {
+    flex-basis: 60%;
+  }
+
+  .container-1-column .container {
+    height: 400px;
+  }
+
+  .container-2-column {
+    flex-basis: 40%;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 5px;
+    margin: 0 auto;
+  }
+
+  .content-picture img {
+    width: 100%;
+    height: 200px;
+  }
+
+  #latest-news {
+    padding-right: 4%;
+    padding-left: 8%;
+  }
+
+  #latest-deals {
+    padding-right: 4%;
+    padding-left: 8%;
+  }
+
+  .row-section-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+
+  .row-section-3 .box {
+    flex: 1 0 28%;
+    margin: 5px;
+  }
+
+  #section-3-row-desable {
+    background: #c09;
+    display: none;
+  }
+
+  .row-section-4 {
+    display: grid;
+    grid-template-columns: 49% 49%;
+  }
+}
+
+/* Smaller screens */
+
+@media screen and (max-width: 700px) {
+  .items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    margin: 0 auto;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 3px;
+  }
+
+  .content-picture img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .row {
+    display: grid;
+    grid-row-gap: 10px;
+  }
+
+  .container-1-column .container {
+    height: 200px;
+    padding-bottom: 10px;
+  }
+
+  .img-container-1 {
+    height: 200px;
+  }
+
+  .row-section-3 {
+    display: grid;
+  }
+
+  .row-section-4 {
+    display: grid;
+    grid-template-columns: 100%;
   }
 }
