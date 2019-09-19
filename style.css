@@ -585,30 +585,6 @@ footer {
 
 /* Media queries */
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-
-@media screen and (max-width: 700px) {
-  .topnav a:not(:last-child) {
-    display: none;
-  }
-
-  #p-content-1 {
-    padding-top: 5px;
-  }
-
-  .section-3-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 3px;
-  }
-
-  .topnav a.icon {
-    float: right;
-    display: block;
-    color: orangered;
-  }
-}
-
 /* Larger screens */
 @media screen and (min-width: 1024px) {
   /* Header */
@@ -710,8 +686,8 @@ footer {
   }
 
   #search_id {
-    padding-left: 26.2rem;
-    display: inline;
+    background: red;
+    float: right;
   }
 }
 
@@ -816,7 +792,41 @@ footer {
   }
 
   #search_id {
+    background: red;
+    float: right;
+  }
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:last-child) {
     display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  #p-content-1 {
+    padding-top: 5px;
+  }
+
+  .section-3-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 3px;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+    color: orangered;
+  }
+
+  #logo_tnw {
+    display: block;
   }
 }
 
@@ -865,10 +875,6 @@ footer {
   }
 
   #logo_tnw {
-    display: inline;
-  }
-
-  #search_id {
-    display: none;
+    display: block;
   }
 }
