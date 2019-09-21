@@ -30,6 +30,7 @@ html {
 .topnav {
   background-color: white;
   overflow: hidden;
+  padding-bottom: 3px;
 }
 
 .topnav a {
